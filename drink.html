@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--noto sans 폰트-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+	<!--=Montserrat 폰트-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!--나무명조 폰트-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+	<title>빽다방-음료서브페이지</title>
+	<!--CDN 연결-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<!--css 연결-->
+	<link rel="stylesheet" type="text/css" href="css/drink.css">
+	<!--js 연결-->
+	<script src="js/nav.js"></script>
+	<script src="js/drink.js"></script>
+</head>
+<body>
+	<header>
+		<div class="outbox_container">
+			<!--로고 / 네비게이션-->
+			<div class="header_container">
+				<div class="right_wrap">
+					<ul>
+						<li>
+							<a href="#">더본 코리아</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/drink-img/facebook2.png" alt="페이스북아이콘" width="20px" height="20px">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/drink-img/insta-ico.png" alt="페이스북아이콘" width="20px" height="20px">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<a href="index.html">
+					<img src="img/drink-img/logo.png" alt="빽다방 로고">
+				</a>
+				<nav class="nav_menu">
+					<ul>
+						<li class="nav_wrap">
+							<a href="brand.html">빽다방</a>
+							<ul class="nav_sub">
+								<li><a href="brand.html">CEO 인사말</a></li>
+								<li><a href="brand.html">빽다방 소개</a></li>
+								<li><a href="#">멤버십 / 앱 소개</a></li>
+								<li><a href="#">커피 이야기</a></li>
+								<li><a href="#">교육 이야기</a></li>
+							</ul>
+						</li>
+						<li class="nav_wrap">
+							<a href="#">메뉴</a>
+							<ul class="nav_sub">
+								<li><a href="#">신메뉴</a></li>
+								<li><a href="#">커피</a></li>
+								<li><a href="#">음료</a></li>
+								<li><a href="#">아이스크림/디저트</a></li>
+								<li><a href="#">빽스치노</a></li>
+							</ul>
+						</li>
+						<li class="nav_wrap">
+							<a href="#">소식</a>
+							<ul class="nav_sub">
+								<li><a href="#">소식</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">친절 우수매장</a></li>
+							</ul>
+						</li>
+						<li class="nav_wrap">
+							<a href="#">커뮤니티</a>
+							<ul class="nav_sub">
+								<li><a href="#">커피 클래스</a></li>
+							</ul>
+						</li>
+						<li class="nav_wrap">
+							<a href="#">매장안내</a>
+							<ul class="nav_sub">
+								<li><a href="#">매장찾기</a></li>
+							</ul>
+						</li>
+						<li class="nav_wrap">
+							<a href="#">창업안내</a>
+							<ul class="nav_sub">
+								<li><a href="#">왜 빽다방인가요?</a></li>
+								<li><a href="#">창업상담 신청</a></li>
+								<li><a href="#">창업절차 및 조건</a></li>
+								<li><a href="#">인테리어</a></li>
+							</ul>
+						</li>
+						<li class="nav_wrap">
+							<a href="#">고객의 소리</a>
+						</li>
+				</nav>	
+			
+				<!--반응형시 나타나는 삼단 메뉴바-->
+				<div class="nav_3bar">
+					<div class="bar_box">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</div>
+				</div>
+			</div>
+			<!--네비 배경-->
+			<div class="navBack_color"></div>
+		</div>
+	</header>
+	<main>
+		<!--서브페이지 배너-->
+		<div class="sub_banner">
+			<dl>
+				<dt>음료</dt>
+				<hr>
+				<dd>퀄리티 높은 식자재를 사용하여 맛있는 음료를 제공합니다.</dd>
+			</dl>
+			<div class="sub_banner_list_wrap">
+				<ul>
+					<li><a>신메뉴</a></li>
+					<li><a>커피</a></li>
+					<li><a>음료</a></li>
+					<li><a>아이스크림/디저트</a></li>
+					<li><a>빽스치노</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--메인 섹션01-->
+		<section class="main_title">
+			<!--추천메뉴-->
+			<h1>추천메뉴<hr></h1>
+			<div class="recommend_menu_wrap">
+				<div class="recommend_menu_hidden">
+					<div>
+						<img src="img/drink-img/misutgaru-450x588.png" alt="미숫가루">
+						<h3>미숫가루</h3>
+						<span>BEST</span>
+					</div>
+					<div>
+						<img src="img/drink-img/grape ade-450x588.png" alt="청포도에이드">
+						<h3>청포도에이드(ICED)</h3>
+						<span>BEST</span>
+					</div>
+					<div>
+						<img src="img/drink-img/tomato-450x588.png" alt="완전토마토주스">
+						<h3>완전토마토주스</h3>
+						<span>BEST</span>
+					</div>
+					<div>
+						<img src="img/drink-img/berryratte-450x588.png" alt="딸기라떼">
+						<h3>딸기라떼(ICED)</h3>
+						<span>BEST</span>
+					</div>
+					<div class="prev_ico"><!--prev icon bg--></div>
+					<div class="next_ico"><!--next icon bg--></div>
+				</div>
+			</div>
+		</section>
+		<!--메인 섹션02-->
+		<section>
+			<ul class="sec02">
+				<li onclick="showDetail()">
+					<div id="thumN">
+						<img src="img/drink-img/초코멜로쉐이크-450x588.jpg" alt="초코 멜로쉐이크">
+						<p>초코 멜로쉐이크</p>
+						<!--클릭시 메뉴 상세 정보 팝업창-->
+						<div class="menu_click_popup" id="showPopup">
+							<div class="menu_click_popup_title">
+								<button class="del_btn" onclick="hideDetail">
+									<!--닫기 버튼 아이콘 bg-->
+								</button>
+								<h1>초코 멜로쉐이크</h1>
+								<hr>
+								<p>진한 초코에 마시멜로우가 함께 블렌딩 된 쉐이크</p>
+							</div>
+							<div class="content_wrap">
+								<p>※ 1회 제공량 기준 : 24oz</p>
+								<ul>
+									<li>카페인(mg)<p>34</p>
+										<br>나트륨(mg)<p>140</p>
+										<br>포화지방(g)<p>8</p>
+									</li>
+									<li>칼로리(kcal)<p>479</p>
+										<br>당류(g)<p>34</p>
+										<br>단백질(g)<p>14</p>
+									</li>
+								</ul>
+								<p class="reference">(매장 상황에 따라 판매하지 않을 수 있습니다.)</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/딸기초코멜로라떼-450x588.jpg" alt="딸기초코 멜로라떼">
+						<p>딸기초코 멜로라떼</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/icecrush_melon-450x588.png" alt="멜론소다">
+						<p>멜론소다</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/쿨라임스무디-450x588.png" alt="쿨라임스무디">
+						<p>쿨라임스무디</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/쿨라임에이드-450x588.png" alt="쿨라임에이드">
+						<p>쿨라임에이드</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/깔라만시스무디-450x588.png" alt="깔라만시스무디">
+						<p>깔라만시스무디</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/성주참외꿀스무디-450x588.png" alt="성주참외스무디">
+						<p>성주참외스무디</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/트로피칼팝핑스무디-450x588.png" alt="트로피칼팝핑스무디">
+						<p>트로피칼팝핑스무디(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/패션후르츠스무디_thumb-450x588.png" alt="패션후르츠스무디">
+						<p>패션후르츠스무디</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/망고패션스무디_thumb-450x588.png" alt="망고패션스무디">
+						<p>망고패션스무디</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/수정과_hot-450x588.png" alt="수정과_hot">
+						<p>수정과(HOT)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/수정과_iced-450x588.png" alt="수정과_iced">
+						<p>수정과(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/식혜-450x588.png" alt="식혜">
+						<p>식혜</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/고구마라떼_핫_450x558-450x588.png" alt="고구마라떼_핫">
+						<p>고구마라떼(HOT)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/고구마라떼_아이스_450x558-450x588.png" alt="고구마라떼_아이스">
+						<p>고구마라떼(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/고구마스무디_아이스_450x558-450x588.png" alt="고구마스무디">
+						<p>고구마스무디</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/바나나라떼HOT-450x588.png" alt="바나나라떼HOT">
+						<p>바나나라떼(HOT)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/바나나라떼ICED-450x588.png" alt="바나나라떼ICED">
+						<p>바나나라떼(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/바나나밀크쉐이크ICED-450x588.png" alt="바나나밀크쉐이크ICED">
+						<p>바나나 밀크쉐이크</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/icecrush_melon-450x588.png" alt="icecrush_melon">
+						<p>아이스크러시 멜론</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/제주감귤주스_thumb-450x588.png" alt="제주감귤주스">
+						<p>제주감귤주스(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/완전수박주스-450x588.png" alt="완전수박주스">
+						<p>완전수박주스</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/블루캔디밀크쉐이크-450x588.png" alt="블루캔디밀크쉐이크">
+						<p>블루캔디밀크쉐이크(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/블루캔디소다-450x588.png" alt="블루캔디소다">
+						<p>블루캔디소다(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/HOT-완전초코-450x588.png" alt="완전초코HOT">
+						<p>초코라떼(HOT)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/ICED-완전초코-450x588.png" alt="완전초코ICED">
+						<p>초코라떼(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/HOT-녹차라떼-1-450x588.png" alt="녹차라떼">
+						<p>녹차라떼(HOT)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/ICED-녹차라떼-2-450x588.png" alt="녹차라떼-2">
+						<p>녹차라떼(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/HOT-민트초코라떼-450x588.png" alt="민트초코라떼HOT">
+						<p>민트초코라떼(HOT)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/ICED-민트초코라떼-450x588.png" alt="민트초코라떼ICED">
+						<p>민트초코라떼(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/HOT-토피넛라떼-450x588.png" alt="토피넛라떼HOT">
+						<p>토피넛라떼(HOT)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/ICED-토피넛라떼-450x588.png" alt="토피넛라떼ICED">
+						<p>토피넛라떼(ICED)</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/drink-img/블랙펄라떼_-450x588.png" alt="블랙펄라떼_">
+						<p>블랙펄라떼(ICED)</p>
+					</div>
+				</li>
+			</ul>
+
+		</section>
+	</main>
+	<footer>
+		<div class="footer_container">
+			<img src="img/drink-img/flogo.png" width="179px" height="47px">
+			<form>
+					<select>
+						<option>패밀리사이트 바로가기</option>
+						<option>더본코리아</option>
+						<option>창업센터</option>
+						<option>새마을식당</option>
+						<option>한신포차</option>
+						<option>역전우동</option>
+						<option>백스비어</option>
+						<option>롤링파스타</option>
+						<option>인생설렁탕</option>
+						<option>미정국수</option>
+						<option>리춘시장</option>
+						<option>원조쌈밥집</option>
+						<option>돌배기집</option>
+						<option>백철판</option>
+						<option>호텔더본</option>
+					</select>
+			</form>
+			<div class="company_info">
+				<ul>
+					<li>(주)더본코리아</li>
+					<li>사업자등록번호 211-86-00870</li>
+					<li>대표이사 백종원</li>
+				</ul>
+				<ul>
+					<li>주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층</li>
+					<li>팩스: 02-511-3864</li>
+				</ul>
+				<ul>
+					<li>본사 대표전화: 02-549-3864</li>
+					<li>가맹상담전화: 02-3447-0410</li>
+					<li>고객센터: 1544-2360</li>
+				</ul>
+				<p>COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED</p>
+			</div>
+		</div>
+		<div class="top_icon_fix">
+			<!--top_icon_bg-->
+		</div>
+	</footer>
+</body>
+</html>
