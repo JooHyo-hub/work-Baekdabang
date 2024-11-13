@@ -1,0 +1,561 @@
+
+*{
+	padding: 0; 
+	margin: 0;
+}
+li{
+	list-style: none;
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+	color: #111;
+}
+body{
+	font-family: "Noto Sans KR", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+	letter-spacing: -1px;
+}
+/*로고, 네비게이션*/
+header{
+	width: 100%;
+}
+.outbox_container{
+	width:100%;
+	overflow: hidden;
+	background-color: #fff;
+	position: fixed;
+	z-index: 99999;
+}
+.header_container{
+	width: 1150px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+}
+.header_container .right_wrap{
+	width: 200px;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	z-index: 100;
+}
+.header_container .right_wrap ul{
+	text-align: right;
+	font-size: 12px;
+	position: relative;
+}
+.header_container .right_wrap a{
+	color: #666;
+}
+.header_container .right_wrap li:nth-child(1){
+	position: absolute;
+	top: 2px;
+	left: 34px;
+}
+.header_container .right_wrap li:nth-child(1):after{
+	content: '|';
+	padding-left: 26px;
+	color: #666;
+}
+.header_container .right_wrap li:nth-child(3){
+	margin-left: 5px;
+}
+.header_container>a{ /*탑 로고*/
+	width: 194px;
+	height: 66px;
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	cursor: pointer;
+	z-index: 99;
+}
+/*네비게이션 메뉴*/
+.header_container .nav_menu{
+	width: 100%;
+	height: 113px;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	letter-spacing: 0px;
+	transition: all 0.5s ease-in-out;
+}
+.header_container .nav_menu > ul{
+	width: 80%;
+	height: 100%;
+	overflow: hidden;
+	font-size: 14px;
+	position: relative;
+    top: 30px;
+    float: right;
+}
+.header_container .nav_wrap{
+	width: 110px;
+	height: 22px;
+	float: left;
+	margin-top: 70px;
+	margin-right: 24px;
+	box-sizing: border-box;
+	position: relative;
+	bottom: 10px;
+}
+.header_container .nav_wrap:nth-child(7){
+	margin-right: 0;
+}
+.header_container .nav_wrap a{
+	font-weight: 500;
+	color: #202020;
+}
+.header_container .nav_wrap>a:hover{
+	font-weight: 800;
+	color: #06065f;
+}
+.header_container .nav_sub{
+	padding: 6px 0;
+	overflow: hidden;
+}
+.header_container .nav_sub li a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+	display: block;
+	padding: 3px 0;
+	font-weight: 400;
+}
+.header_container .nav_sub li:hover a{
+	color: #666;
+}
+.header_container .nav_sub li:nth-child(1){
+	margin-top: 14px;
+}
+/*네비 배경*/
+div.navBack_color{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	background-image: url(../img/nav-img/menu-bg.jpg);
+	top: 116px;
+	left: 0;
+	z-index: -1;
+}
+/*반응형시 나타나는 메뉴바*/
+.header_container .nav_3bar{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right: 0;
+	display: none;
+}
+.header_container .bar_box{
+	width: 100px;
+	overflow: hidden;
+	position: absolute;
+	top: 26px;
+}
+.bar{
+	width: 32px;
+	height: 5px;
+	border-radius: 10px;
+	background-color: #000;
+	margin: 0 auto;
+	margin-bottom: 6px;
+}
+/*메인*/
+main{
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-style: normal;
+	padding-top: 116px;
+}
+/*서브페이지 - 배너*/
+.sub_banner{
+	max-width: 1920px;
+	width: 100%;
+	height: 499px;
+	margin: 0 auto;
+	background-image: url(../img/drink-img/bg-menu3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: "Noto Sans KR", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+	position: relative;
+}
+.sub_banner dl{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	top: 30%;
+}
+.sub_banner dl dt{
+	font-size: 42px;
+	font-weight: 400;
+	color: #202020;
+	padding-right: 10px;
+}
+.sub_banner dl hr{
+	width: 40px;
+	height: 2px;
+	background-color: #202020;
+	border: none;
+	margin: 26px auto;
+	box-sizing: border-box;
+}
+.sub_banner dl dd{
+	color: #202020;
+	font-size: 20px;
+	font-weight: 300;
+}
+.sub_banner .sub_banner_list_wrap{
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	bottom: 8%;
+}
+.sub_banner ul{
+	max-width: 900px;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.sub_banner ul li{
+	width: 20%;
+	float: left;
+	padding: 10px 0;
+	border: 1px solid #ccc;
+	border-right: none;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 300;
+	color: #666;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.sub_banner ul li:hover{
+	background-color: #ffe600;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.sub_banner ul li:nth-child(3){
+	color: #424242;
+	font-weight: 400;
+	background-color: #ffe600;
+}
+.sub_banner ul li:last-child{
+	border-right: 1px solid #ccc;
+}
+/*--메인 섹션01--*/
+.main_title{
+	max-width: 1920px;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.main_title h1{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+	font-size: 38px;
+	font-weight: 900;
+	color: #071F60;
+}
+.main_title hr{
+	width: 80px;
+	height: 4px;
+	margin: 0 auto;
+	margin-top: 10px;
+	color: #071F60;
+	background-color: #071F60;
+	border: none;
+}
+.main_title .recommend_menu_wrap{
+	max-width: 1150px;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+.main_title .recommend_menu_wrap .recommend_menu_hidden{
+	max-width: 1533.333px;
+	width: 400%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	position: relative;
+}
+.main_title .recommend_menu_wrap div{
+	width: 383.333px;
+	height: 360.13px;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+}
+.main_title .recommend_menu_hidden img{
+	width: 245px;
+	height: 320px;
+}
+.main_title .recommend_menu_hidden h3{
+	font-size: 16px;
+	font-weight: 600;
+	color: #202020;
+}
+.main_title .recommend_menu_hidden span{
+	width: 69px;
+	height: 69px;
+	line-height: 69px;
+	border-radius: 50%;
+	color: #ffe600;
+	background-color: #071F60;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+.main_title .recommend_menu_hidden .prev_ico{
+	width: 26px;
+	height: 43px;
+	background-image: url(../img/drink-img/prev-ico.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	left: 0;
+}
+.main_title .recommend_menu_hidden .next_ico{
+	width: 26px;
+	height: 43px;
+	background-image: url(../img/drink-img/next-ico.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	left: 73%;
+}
+
+/*--메인 섹션02--*/
+.sec02{
+	max-width: 1150px;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 80px;
+	border-left: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+}
+.sec02>li{
+	width: 25%;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	border: 1px solid #dcdcdc;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+	position: relative;
+	cursor: pointer;
+}
+.sec02>li:hover{
+	border: 1px solid #666;
+}
+.sec02>li div{
+	display: block;
+}
+.sec02>li div img{
+	width: 100%;
+	background-color: #FFF;
+}
+.sec02>li div p{
+	font-weight: 500;
+}
+/*메뉴 상세정보 --> display none 처리 후 클릭 이벤트 스크립트*/
+.sec02 .menu_click_popup{
+	width: 94%;
+	height: 96%;
+	background: rgba(255, 230, 0, 0.8);
+	box-sizing: border-box;
+	text-align: left;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	display: none;
+}
+.sec02 .menu_click_popup .menu_click_popup_title{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	padding-bottom: 0;
+	box-sizing: border-box;
+}
+.sec02 .menu_click_popup_title>h1{
+	font-size: 22px;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+.sec02 .menu_click_popup_title>hr{
+	width: 30px;
+	height: 2px;
+	margin: 10px 0;
+	background-color: #202020;
+	border: none;
+}
+.sec02 .menu_click_popup_title>p{
+	font-size: 13px;
+}
+.sec02 .menu_click_popup_title .del_btn{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: transparent;
+	cursor: pointer;
+	background-image: url(../img/drink-img/menu-close.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.sec02 .menu_click_popup .content_wrap{
+	width: 94%;
+	overflow: hidden;
+	text-align: left;
+	position: absolute;
+	bottom: 10px;
+	left: 8px;
+	/* background-color: #fff; */
+}
+.sec02 .menu_click_popup .content_wrap>p{
+	font-size: 13px;
+}
+.sec02 .menu_click_popup .content_wrap ul{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 8px;
+	margin-bottom: 18px;
+	float: left;
+	border-top: 2px solid #202020;
+	border-bottom: 2px solid #202020;
+}
+.sec02 .menu_click_popup .content_wrap li{
+	width: 48%;
+	float: left;
+	margin: 6px 0;
+	margin-left: 2px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+	box-sizing: border-box;
+}
+.sec02 .menu_click_popup .content_wrap li:nth-child(1){
+	border-right: 0.5px solid #202020;
+}
+.sec02 .menu_click_popup .content_wrap ul p{
+	float: right;
+	margin-right: 2px;
+}
+.sec02 .menu_click_popup .content_wrap .reference{
+	clear: both;
+	font-size: 10px;
+}
+
+/*푸터 회사정보*/
+footer{
+	max-width: 1920px;
+	width: 100%;
+	height: 257px;
+/*	background-color: gray;*/
+	border-top: 3px solid #ffe600;
+	margin: 0 auto;
+	margin-top: 100px;
+	position: relative;
+}
+footer .footer_container{
+	width: 1150px;
+	height: 254px;
+	margin: 0 auto;
+	text-align: center;
+}
+.footer_container img{
+	margin-top: 30px;
+}
+.footer_container select{
+	float: right;
+	padding: 2px 6px;
+	font-size: 12px;
+	text-align: left;
+	border-radius: 0;
+}
+.footer_container .company_info{
+	width: 1150px;
+	overflow: hidden;
+	margin-top: 30px;	
+}
+.footer_container .company_info ul{
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #262626;
+}
+.footer_container .company_info li:after { /*:after은 |가 나타남*/
+    padding: 0 14px;
+    content: '|';
+}
+.footer_container .company_info p{
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-top: 30px;
+}
+footer .top_icon_fix{
+	width: 60px;
+	height: 63px;
+	background-image: url(../img/drink-img/off.png);
+	position: fixed;
+	right: 4%;
+	bottom: 2%;
+}
+footer .top_icon_fix:hover{
+	background-image: url(../img/drink-img/on.png);
+	cursor: pointer;
+}
+
+
+/*--반응형--*/
+@media screen and (max-width:1199px){ 
+	.outbox_container{
+		height: 70px;
+	}
+	.header_container{
+		height: 70px;
+	}
+	.header_container>a img{
+		width: 97px;
+		height: 32px;
+		position: fixed;
+		left: 10px;
+		top: 20px;
+	}
+	.header_container ul{
+		display: none;
+	}
+	.header_container .nav_3bar{
+		display: block;
+		position: fixed;
+		right: 0px;
+	}
+	.header_container.topbar{
+		display: none;
+	}
+	main{
+		padding-top: 80px;
+	}
+}
